@@ -1,0 +1,243 @@
+[
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "trackingId",
+          "type": "string"
+        }
+      ],
+      "name": "GrievanceDetailsAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "trackingId",
+          "type": "string"
+        }
+      ],
+      "name": "GrievanceMetaAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "trackingId",
+          "type": "string"
+        }
+      ],
+      "name": "GrievanceResolved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "trackingId",
+          "type": "string"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "submitter",
+          "type": "address"
+        }
+      ],
+      "name": "GrievanceSubmitted",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getAllTrackingIds",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "",
+          "type": "string[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "trackingId",
+          "type": "string"
+        }
+      ],
+      "name": "getGrievanceBasic",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "category",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "location",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "mediaCount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "priorityLevel",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "submitter",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "resolved",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "trackingId",
+          "type": "string"
+        }
+      ],
+      "name": "getGrievanceDetails",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "estimatedDays",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fundAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "currency",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "aiJustification",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "trackingId",
+          "type": "string"
+        }
+      ],
+      "name": "markResolved",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "category",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "location",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "mediaCount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "priorityLevel",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "trackingId",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "estimatedDays",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fundAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "currency",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "aiJustification",
+          "type": "string"
+        }
+      ],
+      "name": "submitGrievance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+  
